@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core';
 import { HelloFrameworkModule } from './hello-framework';
-import { MyChildModule } from './my-child.module';
+import { MyChildModule } from './my-child';
 
 @NgModule({
   bootstrap: [AppComponent],
