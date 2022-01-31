@@ -4,7 +4,7 @@ import { Component, Input, AfterContentInit, QueryList, ContentChildren, forward
   selector: 'item',
   template: `
   <div class="item">
-    <span>Hello {{name}}!</span>
+    <span>--> This is my title: {{name}}!</span>
     <ng-content></ng-content>
   </div>
   `,
