@@ -17,9 +17,9 @@ import { Component, Input, AfterContentInit, QueryList, ContentChildren, forward
 })
 export class ItemComponent implements AfterContentInit  {
   @Input() name: string;
-  @ContentChildren(ItemComponent) itemChildren: QueryList<ItemComponent>;
+  @ContentChildren('childContent') child: any;
 
   ngAfterContentInit(): void {
-    console.log(this.name, this.itemChildren);
+    console.log(this.name, this.child);
   }
 }
